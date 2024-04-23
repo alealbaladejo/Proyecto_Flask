@@ -1283,8 +1283,7 @@ outline: 0;
 
 /* Estilos para las celdas de la tabla */
 th, td {
-  padding: 8px; /
-  text-align: left;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -1307,4 +1306,31 @@ tr:hover {
 
 #detalles{
   color: #000000;
+}
+
+.details-heading {
+  text-align: center; /* Centrar el encabezado */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+  color:#2d642f;
+
+}
+
+.details-info {
+  background-color: #c5d6c6; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+.details-info p {
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.details-info strong {
+  font-weight: bold; /* Texto en negrita */
+  color: #292929; /* Color del texto */
+  text-align: center;
 }

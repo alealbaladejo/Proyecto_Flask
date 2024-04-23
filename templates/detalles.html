@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block tittle %}DETALLES{% endblock %}
+
+{% block title %}Detalles del Partido{% endblock %}
+{% block content %}
+    <h2 class="details-heading">Detalles del Partido</h2>
+    <div class="container">
+        <div class="details-info">
+            <p><strong>Fecha y Hora de Inicio:</strong> {{ kickoff_time }}</p>
+            <p><strong>Localización:</strong> {{ location }}</p>
+            <p><strong>Resultado:</strong>
+                {% for team, goal in goals.items() %}
+                    {% if loop.first %}
+                        {{ team }} {{ goal }}
+                    {% else %}
+                        - {{ goal }} {{team}}
+                    {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+{% endblock %}

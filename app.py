@@ -45,6 +45,29 @@ def lista():
         return render_template('lista.html', datos=[])
     
 
+@app.route('/detalle/<id_match>')
+def detalles(id_match):
+    try:
+        # Cargar los datos del partido con el ID proporcionado desde el archivo JSON
+        with open('static/EQUIPOS.json', 'r') as archivo:
+            datos = json.load(archivo)
+        
+        # Buscar el partido con el ID proporcionado
+        partido = next((match for match in datos if match['match_id'] == id_match), None)
+        
+        if partido:
+            # Obtener los detalles del partido
+            kickoff_time = partido.get('kickoff_time', '')
+            goals = partido.get('goals', {})
+            location = partido.get('location', '')
 
+            # Renderizar la plantilla 'detalles.html' y pasar los datos del partido
+            return render_template('detalles.html', id_match=id_match, kickoff_time=kickoff_time, goals=goals, location=location)
+        else:
+            return f"No se encontró ningún partido con el ID {id_match}"
+    except FileNotFoundError:
+        # Si el archivo no se encuentra, abortar con un error 404
+        abort(404)
+    
 if __name__ == "__main__":
     app.run(debug=True)
