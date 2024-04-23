@@ -1,0 +1,482 @@
+[
+    {
+        "match_id": "101",
+        "teams": ["Real Madrid", "FC Barcelona"],
+        "kickoff_time": "2023-09-04 20:00:00",
+        "match_description": "El Clásico showdown between rivals!",
+        "goals": {
+            "Real Madrid": 2,
+            "FC Barcelona": 1
+        },
+        "comments": [
+            {
+                "comment_id": "201",
+                "commentator": "DavidSmith",
+                "comment_text": "What a goal! This match s intense!i"
+            },
+            {
+                "comment_id": "202",
+                "commentator": "EmmaJohnson",
+                "comment_text": "Both teams showing great skills!"
+            }
+        ],
+        "shares": 50,
+        "location": "Santiago Bernabéu"
+    },
+    {
+        "match_id": "102",
+        "teams": ["FC Bayern Munich", "Manchester City"],
+        "kickoff_time": "2023-09-05 18:30:00",
+        "match_description": "Champions League clash in group stage",
+        "goals": {
+            "FC Bayern Munich": 1,
+            "Manchester City": 1
+        },
+        "comments": [
+            {
+                "comment_id": "203",
+                "commentator": "JohnWilliams",
+                "comment_text": "Exciting match! Can't predict the winner."
+            },
+            {
+                "comment_id": "204",
+                "commentator": "SophieBrown",
+                "comment_text": "Who will advance to the knockout stage?"
+            }
+        ],
+        "shares": 30,
+        "location": "Allianz Arena"
+    },
+    {
+        "match_id": "103",
+        "teams": ["Liverpool", "AC Milan"],
+        "kickoff_time": "2023-09-06 21:15:00",
+        "match_description": "Classic encounter of European giants",
+        "goals": {
+            "Liverpool": 2,
+            "AC Milan": 2
+        },
+        "comments": [
+            {
+                "comment_id": "205",
+                "commentator": "MichaelDavis",
+                "comment_text": "Both teams playing beautifully tonight!"
+            },
+            {
+                "comment_id": "206",
+                "commentator": "EmilyWhite",
+                "comment_text": "A goal fest! Loving every moment."
+            }
+        ],
+        "shares": 25,
+        "location": "Anfield"
+    },
+    {
+        "match_id": "104",
+        "teams": ["Juventus", "Paris Saint-Germain"],
+        "kickoff_time": "2023-09-07 19:45:00",
+        "match_description": "Star-studded clash in the group of death",
+        "goals": {
+            "Juventus": 2,
+            "Paris Saint-Germain": 1
+        },
+        "comments": [
+            {
+                "comment_id": "207",
+                "commentator": "ChrisRoberts",
+                "comment_text": "Nail-biting match! Can't take my eyes off it."
+            },
+            {
+                "comment_id": "208",
+                "commentator": "OliviaHall",
+                "comment_text": "Incredible skills on display from both sides!"
+            }
+        ],
+        "shares": 40,
+        "location": "Allianz Stadium"
+    },
+    {
+        "match_id": "105",
+        "teams": ["Manchester United", "Chelsea"],
+        "kickoff_time": "2023-09-08 17:30:00",
+        "match_description": "Premier League clash between top contenders",
+        "goals": {
+            "Manchester United": 2,
+            "Chelsea": 1
+        },
+        "comments": [
+            {
+                "comment_id": "209",
+                "commentator": "DanielTaylor",
+                "comment_text": "Intense battle for the top spot in the league!"
+            },
+            {
+                "comment_id": "210",
+                "commentator": "SophiaMiller",
+                "comment_text": "Every fan is on the edge of their seats!"
+            }
+        ],
+        "shares": 35,
+        "location": "Old Trafford"
+    },
+    {
+        "match_id": "106",
+        "teams": ["Ajax", "Inter Milan"],
+        "kickoff_time": "2023-09-09 20:00:00",
+        "match_description": "European rivalry in a group stage encounter",
+        "goals": {
+            "Ajax": 1,
+            "Inter Milan": 1
+        },
+        "comments": [
+            {
+                "comment_id": "211",
+                "commentator": "RyanJones",
+                "comment_text": "Can't miss this clash of titans!"
+            },
+            {
+                "comment_id": "212",
+                "commentator": "EllaTurner",
+                "comment_text": "Both teams displaying superb tactics!"
+            }
+        ],
+        "shares": 28,
+        "location": "Johan Cruyff Arena"
+    },
+    {
+        "match_id": "107",
+        "teams": ["Arsenal", "Tottenham Hotspur"],
+        "kickoff_time": "2023-09-10 16:45:00",
+        "match_description": "North London Derby with high stakes",
+        "goals": {
+            "Arsenal": 2,
+            "Tottenham Hotspur": 2
+        },
+        "comments": [
+            {
+                "comment_id": "213",
+                "commentator": "MatthewClark",
+                "comment_text": "Goals galore in this historic rivalry!"
+            },
+            {
+                "comment_id": "214",
+                "commentator": "LilyBaker",
+                "comment_text": "Fans are in for a treat with this match!"
+            }
+        ],
+        "shares": 42,
+        "location": "Emirates Stadium"
+    },
+    {
+        "match_id": "108",
+        "teams": ["Bayern Leverkusen", "Borussia Dortmund"],
+        "kickoff_time": "2023-09-11 18:30:00",
+        "match_description": "Bundesliga showdown between top German clubs",
+        "goals": {
+            "Bayern Leverkusen": 2,
+            "Borussia Dortmund": 1
+        },
+        "comments": [
+            {
+                "comment_id": "215",
+                "commentator": "NatalieHill",
+                "comment_text": "German football at its finest!"
+            },
+            {
+                "comment_id": "216",
+                "commentator": "DavidWhite",
+                "comment_text": "Who will emerge victorious in this clash?"
+            }
+        ],
+        "shares": 38,
+        "location": "BayArena"
+    },
+    {
+        "match_id": "109",
+        "teams": ["Atletico Madrid", "Sevilla"],
+        "kickoff_time": "2023-09-12 21:00:00",
+        "match_description": "La Liga battle for supremacy",
+        "goals": {
+            "Atletico Madrid": 1,
+            "Sevilla": 1
+        },
+        "comments": [
+            {
+                "comment_id": "217",
+                "commentator": "SophieEvans",
+                "comment_text": "Spanish football never disappoints!"
+            },
+            {
+                "comment_id": "218",
+                "commentator": "JasonWard",
+                "comment_text": "Tactical brilliance from both teams!"
+            }
+        ],
+        "shares": 31,
+        "location": "Wanda Metropolitano"
+    },
+    {
+        "match_id": "110",
+        "teams": ["Real Madrid", "FC Barcelona"],
+        "kickoff_time": "2023-09-13 19:15:00",
+        "match_description": "El Clásico - Battle of the giants",
+        "goals": {
+            "Real Madrid": 3,
+            "FC Barcelona": 2
+        },
+        "comments": [
+            {
+                "comment_id": "219",
+                "commentator": "EmmaJones",
+                "comment_text": "The world stops to watch El Clásico!"
+            },
+            {
+                "comment_id": "220",
+                "commentator": "OliverDavis",
+                "comment_text": "Incredible goals from both sides!"
+            }
+        ],
+        "shares": 50,
+        "location": "Santiago Bernabeu"
+    },
+    {
+        "match_id": "111",
+        "teams": ["Liverpool", "Manchester City"],
+        "kickoff_time": "2023-09-14 20:30:00",
+        "match_description": "Top English clubs face off in a thrilling encounter",
+        "goals": {
+            "Liverpool": 2,
+            "Manchester City": 1
+        },
+        "comments": [
+            {
+                "comment_id": "221",
+                "commentator": "SophiaClark",
+                "comment_text": "Anfield is alive with excitement!"
+            },
+            {
+                "comment_id": "222",
+                "commentator": "NathanMiller",
+                "comment_text": "Will Manchester City break Liverpool's defense?"
+            }
+        ],
+        "shares": 40,
+        "location": "Anfield"
+    },
+    {
+        "match_id": "112",
+        "teams": ["Juventus", "AC Milan"],
+        "kickoff_time": "2023-09-15 18:00:00",
+        "match_description": "Serie A battle for the top spot",
+        "goals": {
+            "Juventus": 3,
+            "AC Milan": 1
+        },
+        "comments": [
+            {
+                "comment_id": "223",
+                "commentator": "IsabellaWhite",
+                "comment_text": "Italian football at its finest!"
+            },
+            {
+                "comment_id": "224",
+                "commentator": "JamesTurner",
+                "comment_text": "A goal-fest in the making!"
+            }
+        ],
+        "shares": 45,
+        "location": "Allianz Stadium"
+    },
+    {
+        "match_id": "113",
+        "teams": ["Paris Saint-Germain", "Monaco"],
+        "kickoff_time": "2023-09-16 21:15:00",
+        "match_description": "Ligue 1 showdown with star-studded lineups",
+        "goals": {
+            "Paris Saint-Germain": 2,
+            "Monaco": 1
+        },
+        "comments": [
+            {
+                "comment_id": "225",
+                "commentator": "GabrielHall",
+                "comment_text": "Neymar and Mbappé in action tonight!"
+            },
+            {
+                "comment_id": "226",
+                "commentator": "MiaAdams",
+                "comment_text": "Monaco's counter-attacks are a threat!"
+            }
+        ],
+        "shares": 36,
+        "location": "Parc des Princes"
+    },
+    {
+        "match_id": "114",
+        "teams": ["Roma", "Napoli"],
+        "kickoff_time": "2023-09-17 17:45:00",
+        "match_description": "Serie A battle between eternal rivals",
+        "goals": {
+            "Roma": 1,
+            "Napoli": 1
+        },
+        "comments": [
+            {
+                "comment_id": "227",
+                "commentator": "MichaelBaker",
+                "comment_text": "Can Roma secure a vital win?"
+            },
+            {
+                "comment_id": "228",
+                "commentator": "EmmaJohnson",
+                "comment_text": "Napoli's defense is rock solid!"
+            }
+        ],
+        "shares": 33,
+        "location": "Stadio Olimpico"
+    },
+    {
+        "match_id": "115",
+        "teams": ["Manchester United", "Liverpool"],
+        "kickoff_time": "2023-09-18 18:30:00",
+        "match_description": "Classic English rivalry with high stakes",
+        "goals": {
+            "Manchester United": 2,
+            "Liverpool": 1
+        },
+        "comments": [
+            {
+                "comment_id": "229",
+                "commentator": "AlexanderClark",
+                "comment_text": "Old Trafford is buzzing with anticipation!"
+            },
+            {
+                "comment_id": "230",
+                "commentator": "EmilyDavis",
+                "comment_text": "Which team will emerge as the victor?"
+            }
+        ],
+        "shares": 48,
+        "location": "Old Trafford"
+    },
+    {
+        "match_id": "116",
+        "teams": ["Barcelona", "Real Madrid"],
+        "kickoff_time": "2023-09-19 20:00:00",
+        "match_description": "Another thrilling chapter in El Clásico",
+        "goals": {
+            "Barcelona": 2,
+            "Real Madrid": 2
+        },
+        "comments": [
+            {
+                "comment_id": "231",
+                "commentator": "JoshuaHill",
+                "comment_text": "Expect fireworks at the Camp Nou tonight!"
+            },
+            {
+                "comment_id": "232",
+                "commentator": "SophieEvans",
+                "comment_text": "A clash of football titans!"
+            }
+        ],
+        "shares": 42,
+        "location": "Camp Nou"
+    },
+    {
+        "match_id": "117",
+        "teams": ["Bayern Munich", "Borussia Dortmund"],
+        "kickoff_time": "2023-09-20 19:15:00",
+        "match_description": "Bundesliga battle for supremacy",
+        "goals": {
+            "Bayern Munich": 2,
+            "Borussia Dortmund": 1
+        },
+        "comments": [
+            {
+                "comment_id": "233",
+                "commentator": "DavidTurner",
+                "comment_text": "German football at its best!"
+            },
+            {
+                "comment_id": "234",
+                "commentator": "LilyClark",
+                "comment_text": "Dortmund's attacking prowess on display!"
+            }
+        ],
+        "shares": 39,
+        "location": "Allianz Arena"
+    },
+    {
+        "match_id": "118",
+        "teams": ["Paris Saint-Germain", "Lyon"],
+        "kickoff_time": "2023-09-21 20:30:00",
+        "match_description": "Ligue 1 clash featuring top French talents",
+        "goals": {
+            "Paris Saint-Germain": 1,
+            "Lyon": 1
+        },
+        "comments": [
+            {
+                "comment_id": "235",
+                "commentator": "OliviaWhite",
+                "comment_text": "French football elegance on the pitch!"
+            },
+            {
+                "comment_id": "236",
+                "commentator": "DanielMiller",
+                "comment_text": "Lyon's defense facing a tough test!"
+            }
+        ],
+        "shares": 37,
+        "location": "Parc des Princes"
+    },
+    {
+        "match_id": "119",
+        "teams": ["Juventus", "Inter Milan"],
+        "kickoff_time": "2023-09-22 18:00:00",
+        "match_description": "Serie A showdown between Italian giants",
+        "goals": {
+            "Juventus": 2,
+            "Inter Milan": 1
+        },
+        "comments": [
+            {
+                "comment_id": "237",
+                "commentator": "NathanTurner",
+                "comment_text": "A clash that could determine the title race!"
+            },
+            {
+                "comment_id": "238",
+                "commentator": "EmmaClark",
+                "comment_text": "Inter Milan's midfield dominating the play!"
+            }
+        ],
+        "shares": 34,
+        "location": "Allianz Stadium"
+    },
+    {
+        "match_id": "120",
+        "teams": ["Chelsea", "Arsenal"],
+        "kickoff_time": "2023-09-23 17:45:00",
+        "match_description": "London Derby with local pride at stake",
+        "goals": {
+            "Chelsea": 2,
+            "Arsenal": 1
+        },
+        "comments": [
+            {
+                "comment_id": "239",
+                "commentator": "IsaacEvans",
+                "comment_text": "Tension in the air as London rivals face off!"
+            },
+            {
+                "comment_id": "240",
+                "commentator": "AvaJones",
+                "comment_text": "Which team will own London tonight?"
+            }
+        ],
+        "shares": 45,
+        "location": "Stamford Bridge"
+    }
+]

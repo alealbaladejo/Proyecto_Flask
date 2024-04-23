@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Lista de Equipos{% endblock %}
+
+{% block content %}
+    <h2>Resultados de la búsqueda</h2>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Local</th>
+                    <th>Visitante</th>
+                    <th>Día y Hora</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for match in datos %}
+                <tr>
+                    <td>{{ match.teams[0] }}</td>
+                    <td>{{ match.teams[1] }}</td>
+                    <td>{{ match.kickoff_time }}</td>
+                    <td>{{ match.match_description }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
