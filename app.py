@@ -44,5 +44,7 @@ def lista():
         # Si la solicitud es GET, simplemente renderiza la plantilla 'lista.html'
         return render_template('lista.html', datos=[])
     
+
+
 if __name__ == "__main__":
     app.run(debug=True)
