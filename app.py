@@ -64,7 +64,8 @@ def detalles(id_match):
             # Renderizar la plantilla 'detalles.html' y pasar los datos del partido
             return render_template('detalles.html', id_match=id_match, kickoff_time=kickoff_time, goals=goals, location=location)
         else:
-            return f"No se encontró ningún partido con el ID {id_match}"
+            mensaje_error = f"No se encontró ningún partido con el ID {id_match}. <a href='/'>Volver al inicio</a>"
+            return mensaje_error, 404
     except FileNotFoundError:
         # Si el archivo no se encuentra, abortar con un error 404
         abort(404)

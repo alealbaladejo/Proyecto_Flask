@@ -1298,6 +1298,7 @@ tr:nth-child(odd) {
 /* Estilos para las cabeceras de la tabla */
 th {
   background-color: #2d642f;
+  
   color: white;
 }
 
