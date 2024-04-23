@@ -4,6 +4,9 @@
 body {
   background: #FFFFFF;
 }
+section{
+  text-align: center;
+}
 .section {
   padding: 30px 0;
   -webkit-transform: translateZ(0);
@@ -787,7 +790,7 @@ border:none;
 }
 .product-details .choose-item-color span {
   display: inline-block;
-  *display: inline;
+  display: inline;
   width: 10px;
   height: 10px;
   border-width: 1px;
@@ -1295,7 +1298,6 @@ tr:nth-child(odd) {
 /* Estilos para las cabeceras de la tabla */
 th {
   background-color: #2d642f;
-  text-align: left;
   color: white;
 }
 
@@ -1334,3 +1336,13 @@ tr:hover {
   color: #292929; /* Color del texto */
   text-align: center;
 }
+
+.logo-container {
+  text-align: center; /* Centrar horizontalmente */
+  margin-top: 50px; /* Espaciado superior */
+}
+
+.logo-container img {
+  max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+}
+

@@ -3,9 +3,11 @@
    PÁGINA PRINCIPAL
 {% endblock %}
 {% block content %}
-   <a href="{{ url_for('buscador') }}">
-       <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" srcset="">
-   </a>
+   <div class="logo-container">
+       <a href="{{ url_for('buscador') }}">
+           <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" srcset="">
+       </a>
+   </div>
    <div class="calltoaction-wrapper">
       <h3>Pulsa sobre la <span style="color:#f50000; text-transform:uppercase;font-size:24px;">IMAGEN</span> para acceder al buscador</h3>
    </div>
