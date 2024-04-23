@@ -9,19 +9,17 @@
                 <tr>
                     <th>Local</th>
                     <th>Visitante</th>
-                    <th>Día y Hora</th>
                     <th>Detalles</th>
                 </tr>
             </thead>
             <tbody>
                 {% for match in datos %}
-                <tr>
-                    <td>{{ match.teams[0] }}</td>
-                    <td>{{ match.teams[1] }}</td>
-                    <td>{{ match.kickoff_time }}</td>
-                    <td>{{ match.match_description }}</td>
-                </tr>
-                {% endfor %}
+            <tr>
+                <td>{{ match['teams'][0] }}</td>
+                <td>{{ match['teams'][1] }}</td>
+                <td id="detalles"><a href="/detalle/{{ match['match_id'] }}">{{ match['match_description'] }}</a></td>
+            </tr>
+            {% endfor %}
             </tbody>
         </table>
     </div>
