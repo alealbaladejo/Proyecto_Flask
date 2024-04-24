@@ -70,5 +70,5 @@ def detalles(id_match):
         # Si el archivo no se encuentra, abortar con un error 404
         abort(404)
     
-if __name__ == "__main__":
-    app.run(debug=True)
+port=os.environ["PORT"]
+app.run('0.0.0.0',int(port), debug=True)
