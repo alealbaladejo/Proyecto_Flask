@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "mi-proyecto"
+version = "0.1.0"
+description = "Descripción de mi proyecto."
+authors = ["Tu Nombre <tu@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^2.0.0"
+requests = "^2.26.0"
