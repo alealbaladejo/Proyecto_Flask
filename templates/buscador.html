@@ -1,12 +1,11 @@
-{% extends 'base.html'%}
-{% block tittle %}BUSCADOR{% endblock %}
-{% block content%}
-    <h2> INTRODUCE EL EQUIPO QUE QUIERES BUSCAR</h2>
+{% extends 'base.html' %}
+{% block title %}BUSCADOR{% endblock %}
+{% block content %}
+    <h2>INTRODUCE EL EQUIPO QUE QUIERES BUSCAR</h2>
     <div class="container">
-      <form method="post" action="/lista">
-        <input type="text" name="cadena" placeholder="Buscar equipo...">
-        <button type="submit">Buscar</button>
-    </form>
+        <form method="post" action="/lista">
+            <input type="text" name="cadena" value="{{ cadena }}">
+            <button type="submit">Buscar</button>
+        </form>
     </div>
-
-{%endblock%}
+{% endblock %}

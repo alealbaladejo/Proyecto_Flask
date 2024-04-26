@@ -1,8 +1,9 @@
-from flask import Flask, render_template, abort, request, jsonify
+from flask import Flask, render_template, abort, request, jsonify, session, redirect, url_for
 import json
 import os
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'  # Asegúrate de cambiar esto por una clave segura en un entorno de producción
 
 @app.route('/')
 def inicio():
@@ -10,14 +11,14 @@ def inicio():
 
 @app.route('/buscador')
 def buscador():
-    return render_template("buscador.html")
+    cadena = session.get('cadena_busqueda', '')  # Obtener la cadena de búsqueda de la sesión
+    return render_template("buscador.html", cadena=cadena)
 
 @app.route('/lista', methods=["GET", "POST"])
 def lista():
     if request.method == "POST":
         # Obtener el equipo de búsqueda del formulario
         cadena_busqueda = request.form.get('cadena', '')
-
         try:
             # Construir la ruta completa al archivo JSON
             ruta_json = os.path.join(app.root_path, 'static', 'EQUIPOS.json')
@@ -34,6 +35,9 @@ def lista():
                 mensaje = "No se encontraron resultados para la búsqueda: {}".format(cadena_busqueda)
                 return render_template('lista.html', datos=[], mensaje=mensaje)
 
+            # Almacenar la cadena de búsqueda en la sesión
+            session['cadena_busqueda'] = cadena_busqueda
+
         except FileNotFoundError:
             # Si el archivo no se encuentra, abortar con un error 404
             abort(404)
@@ -41,8 +45,8 @@ def lista():
         # Renderizar la plantilla 'lista.html' y pasar los datos filtrados
         return render_template('lista.html', datos=datos_filtrados)
     else:
-        # Si la solicitud es GET, simplemente renderiza la plantilla 'lista.html'
-        return render_template('lista.html', datos=[])
+        # Si la solicitud es GET, redirigir al buscador para evitar enviar un formulario vacío
+        return redirect(url_for('buscador'))
 
 @app.route('/detalle/<id_match>')
 def detalles(id_match):
@@ -63,7 +67,8 @@ def detalles(id_match):
             # Renderizar la plantilla 'detalles.html' y pasar los datos del partido
             return render_template('detalles.html', id_match=id_match, kickoff_time=kickoff_time, goals=goals, location=location)
         else:
-            mensaje_error = f"No se encontró ningún partido con el ID {id_match}.<a href='/buscador'>Volver al buscador</a> <a href='/'>Volver al inicio</a>"
+            mensaje_error = f"No se encontró ningún partido con el ID {id_match}."
+
             return mensaje_error, 404
     except FileNotFoundError:
         # Si el archivo no se encuentra, abortar con un error 404
