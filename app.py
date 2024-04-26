@@ -12,7 +12,6 @@ def inicio():
 def buscador():
     return render_template("buscador.html")
 
-
 @app.route('/lista', methods=["GET", "POST"])
 def lista():
     if request.method == "POST":
@@ -30,9 +29,10 @@ def lista():
             # Filtrar los datos según la cadena de búsqueda
             datos_filtrados = [match for match in datos if any(team.startswith(cadena_busqueda) for team in match['teams'])]
 
-            # Si no se encuentran partidos que coincidan, mostrar todos los partidos
+            # Si no se encuentran partidos que coincidan, mostrar un mensaje de error
             if not datos_filtrados:
-                datos_filtrados = datos
+                mensaje = "No se encontraron resultados para la búsqueda: {}".format(cadena_busqueda)
+                return render_template('lista.html', datos=[], mensaje=mensaje)
 
         except FileNotFoundError:
             # Si el archivo no se encuentra, abortar con un error 404
@@ -43,7 +43,6 @@ def lista():
     else:
         # Si la solicitud es GET, simplemente renderiza la plantilla 'lista.html'
         return render_template('lista.html', datos=[])
-    
 
 @app.route('/detalle/<id_match>')
 def detalles(id_match):
@@ -64,7 +63,7 @@ def detalles(id_match):
             # Renderizar la plantilla 'detalles.html' y pasar los datos del partido
             return render_template('detalles.html', id_match=id_match, kickoff_time=kickoff_time, goals=goals, location=location)
         else:
-            mensaje_error = f"No se encontró ningún partido con el ID {id_match}.<a href='/'>Volver al inicio</a> <a href='/'>Volver al inicio</a>"
+            mensaje_error = f"No se encontró ningún partido con el ID {id_match}.<a href='/buscador'>Volver al buscador</a> <a href='/'>Volver al inicio</a>"
             return mensaje_error, 404
     except FileNotFoundError:
         # Si el archivo no se encuentra, abortar con un error 404

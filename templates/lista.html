@@ -3,24 +3,28 @@
 
 {% block content %}
     <h2>Resultados de la búsqueda</h2>
-    <div class="container">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Local</th>
-                    <th>Visitante</th>
-                    <th>Detalles</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for match in datos %}
-            <tr>
-                <td>{{ match['teams'][0] }}</td>
-                <td>{{ match['teams'][1] }}</td>
-                <td id="detalles"><a href="/detalle/{{ match['match_id'] }}">{{ match['match_description'] }}</a></td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-    </div>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% else %}
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Local</th>
+                        <th>Visitante</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in datos %}
+                        <tr>
+                            <td>{{ match['teams'][0] }}</td>
+                            <td>{{ match['teams'][1] }}</td>
+                            <td id="detalles"><a href="/detalle/{{ match['match_id'] }}">{{ match['match_description'] }}</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
 {% endblock %}
